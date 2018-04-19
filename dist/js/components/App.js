@@ -8,6 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/* eslint-disable no-unused-vars */
 var App = function (_React$Component) {
     _inherits(App, _React$Component);
 
@@ -53,9 +54,12 @@ var App = function (_React$Component) {
                 null,
                 React.createElement(
                     'form',
-                    { onSubmit: function onSubmit(event) {
+                    {
+                        onSubmit: function onSubmit(event) {
                             return _this3.onSubmit(event);
-                        } },
+                        },
+                        className: 'form'
+                    },
                     React.createElement(
                         'label',
                         { htmlFor: 'searchText' },

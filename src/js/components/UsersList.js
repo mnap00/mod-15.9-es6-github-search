@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 class UsersList extends React.Component {
     get users() {
         return this.props.users.map(user =>
@@ -6,7 +7,7 @@ class UsersList extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className='usersList'>
                 {this.users}
             </div>
         );

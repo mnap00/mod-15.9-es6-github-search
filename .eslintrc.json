@@ -20,7 +20,8 @@
         "codeFrame": false
     },
     "globals": {
-        "ReactDOM": false
+        "ReactDOM": false,
+        "React": false
     },
     "plugins": [
         "react",

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 class App extends React.Component {
     constructor() {
         super();
@@ -20,7 +21,10 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={event => this.onSubmit(event)}>
+                <form
+                    onSubmit={event => this.onSubmit(event)}
+                    className='form'
+                >
                     <label htmlFor='searchText'>Search by user name</label>
                     <input
                         type='text'
